@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Guess</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+        img {
+            margin: 20px;
+        }
+    </style>
+    <script>
+        window.onload = init;
+        function init(){
+            // Utiliza o event handler de click em um tag com um ID
+            // let image = document.getElementById("zero");
+            // image.onclick = showAnswer;
+
+            // O getElementsByTagName retorna uma lista com todos os elementos
+            // com a tag img na página.
+            let images = document.getElementsByTagName("img");
+            
+            // Iteramos a lista de elementos, atribuindo o método showAnswer 
+            // para cada elemento em cada posição, utilizando o handler de click.
+            for (let i = 0; i < images.length; i++){
+                images[i].onmouseover = showAnswer;
+                images[i].onmouseout = reblur;
+            }
+        }
+        function showAnswer(eventObj){
+            let image = eventObj.target;
+            let name = image.id;
+            name = name + ".jpg";
+            image.src = name;
+            // setTimeout(reblur, 2000, image);
+        }
+        function reblur(eventObj){
+            let image = eventObj.target;
+
+            let name = image.id;
+            name = name + "blur.jpg";
+            image.src = name;
+        }
+    </script>
+</head>
+<body>
+    <img src="zeroblur.jpg" id="zero">
+    <img src="oneblur.jpg" id="one">
+    <img src="twoblur.jpg" id="two">
+    <img src="threeblur.jpg" id="three">
+    <img src="fourblur.jpg" id="four">
+    <img src="fiveblur.jpg" id="five">
+
+</body>
+</html>

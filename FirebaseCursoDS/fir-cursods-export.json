@@ -1,0 +1,85 @@
+{
+  "BD" : {
+    "Empresas" : [ {
+      "nome" : "Coca-Cola"
+    }, {
+      "nome" : "Pepsi"
+    }, {
+      "nome" : "Apple"
+    }, {
+      "nome" : "Google"
+    }, {
+      "nome" : "JAF.Apps"
+    }, {
+      "nome" : "Udemy"
+    }, {
+      "nome" : "Amazon"
+    }, {
+      "nome" : "Facebook"
+    }, {
+      "nome" : "Volkswagen "
+    }, {
+      "nome" : "Walmart"
+    }, {
+      "nome" : "Toyota"
+    }, {
+      "nome" : "Microsoft"
+    }, {
+      "nome" : "IBM"
+    }, {
+      "nome" : "Dell"
+    }, {
+      "nome" : "Samsung"
+    }, {
+      "nome" : "Intel"
+    }, {
+      "nome" : "McDonald's"
+    }, {
+      "nome" : "Ford"
+    }, {
+      "nome" : "Yahoo!"
+    }, {
+      "nome" : "AmBev"
+    } ],
+    "Gerentes" : {
+      "0" : {
+        "contat" : [ "sdsd" ],
+        "contato" : 67999999999,
+        "contatos" : [ "678888888888", "6734445566", "87564123" ],
+        "fumante" : false,
+        "idade" : 1,
+        "nome" : "Joao"
+      },
+      "1" : {
+        "fumante" : false,
+        "idade" : 5,
+        "nome" : "joao"
+      },
+      "25" : {
+        "fumante" : false,
+        "idade" : 56,
+        "nome" : "joao"
+      },
+      "-LM43rZ9YmrQcekkUAKg" : {
+        "fumante" : false,
+        "idade" : 38,
+        "nome" : "offline"
+      },
+      "-LM44MNXuAnxx-lpAcMg" : {
+        "fumante" : false,
+        "idade" : 700,
+        "nome" : "teste offline"
+      },
+      "-LM44hoolIp2j_ni13jK" : {
+        "fumante" : false,
+        "idade" : 10,
+        "nome" : "jone offline"
+      },
+      "-LM4Fzs67jfU5IAjJxdN" : {
+        "fumante" : false,
+        "idade" : 52,
+        "nome" : "Jone"
+      }
+    }
+  }
+}

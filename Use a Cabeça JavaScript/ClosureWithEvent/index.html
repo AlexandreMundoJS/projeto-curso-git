@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Me!</title>
+</head>
+<style>
+    body,
+    button {
+        margin: 10px;
+    }
+
+    div {
+        padding: 10px;
+    }
+</style>
+<script>
+    // let count = 0;
+    // window.onload = function () {
+    //     let button = document.getElementById("clickme");
+    //     button.onclick = handleClick;
+    // };
+
+    // function handleClick() {
+    //     let message = "Você clicou ";
+    //     let div = document.getElementById("message");
+    //     count++;
+            
+    //     count === 1 ? div.innerHTML = message + count + " vez!" : div.innerHTML = message + count + " vezes!";
+        
+    // }
+
+    // VERSÃO COM CLOSURE
+    window.onload = function(){
+        let count = 0;
+        let message = "Você clicou ";
+        let div = document.getElementById("message");
+        let button = document.getElementById("clickme");
+        button.onclick = function(){
+            count++;
+            count === 1 ? div.innerHTML = message + count + " vez!" : div.innerHTML = message + count + " vezes!";
+        };
+    };
+</script>
+
+<body>
+    <button id="clickme">Clique aqui!</button>
+    <div id="message"></div>
+</body>
+
+</html>

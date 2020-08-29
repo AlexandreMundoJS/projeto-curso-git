@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+    <script>
+        // função callback (event handler)
+        function init() {
+            let planet = document.getElementById("greenplanet");
+            planet.innerHTML = "Red Alert: hit by phaser fire!";
+            planet.setAttribute("class", "redtext");
+        }
+
+        //DOM chamará a função init (callback) quando terminar de carregar o HTML
+        window.onload = init;
+</script>
+<style>
+    .redtext{color:red;}
+</style>
+</head>
+
+<body>
+    <h1>Green Planet</h1>
+    <p id="greenplanet">All is well</p>
+    <h1>Red Planet</h1>
+    <p id="redplanet">Nothing to report</p>
+    <h1>Blue Planet</h1>
+    <p id="blueplanet">All systems A-OK</p>
+</body>
+
+</html>
