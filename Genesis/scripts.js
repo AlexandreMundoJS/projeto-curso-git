@@ -91,6 +91,7 @@ function gameOver(){
     playGame();
 };
 
+// função para inicio do jogo
 function playGame(){
     score = 0;
     alert('Bem vindo ao Genesis! Iniciando novo jogo');
@@ -98,10 +99,12 @@ function playGame(){
     nextLevel();
 }
 
-green.onclick = () => click[0];
-red.onclick = () => click[1];
-yellow.onclick = () => click[2];
-blue.onclick = () => click[3];
 
+// eventos de cick para as cores
+green.onclick = () => click(0);
+red.onclick = () => click(1);
+yellow.onclick = () => click(2);
+blue.onclick = () => click(3);
 
+// inicio do jogo
 playGame();
