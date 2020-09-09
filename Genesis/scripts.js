@@ -40,7 +40,7 @@ function lightColor(element, number){
 function checkOrder(){
     for (let i in clickedOrder){
         if(clickedOrder[i] != order[i]){
-            lose();
+            gameOver();
             break;
         }
     }
@@ -58,7 +58,50 @@ function click(color){
 
     setTimeout(() => {
         createColorElement(color).classList.remove('selected');
-    })
+        checkOrder();
+    }, 250)
 
-    checkOrder();
 }
+
+// funcao que retorna a cor
+function createColorElement(color){
+    if (color == 0){
+        return green;
+    } else if (color == 1){
+        return red;
+    } else if (color == 2){
+        return yellow;
+    } else if (color == 3) {
+        return blue;
+    }
+}
+
+// função para próximo nível do jogo
+function nextLevel(){
+    score++;
+    shuffleOrder();
+}
+
+// função para game over
+function gameOver(){
+    alert(`Pontuação: ${score}!\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo`);
+    order = [];
+    clickedOrder = [];
+    
+    playGame();
+};
+
+function playGame(){
+    score = 0;
+    alert('Bem vindo ao Genesis! Iniciando novo jogo');
+
+    nextLevel();
+}
+
+green.onclick = () => click[0];
+red.onclick = () => click[1];
+yellow.onclick = () => click[2];
+blue.onclick = () => click[3];
+
+
+playGame();
